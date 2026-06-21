@@ -3,41 +3,36 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Tanit Tech. Practical AI training for professionals and teams. Workshops built around your actual workflows.">
-<title>Tanit Tech — Practical AI training for professionals and teams</title>
+<meta name="description" content="Tanit Tech. Practical AI training, audits, and advisory for professionals and organisations. Built around your actual workflows.">
+<title>Tanit Tech — AI training, audits, and advisory for professionals and teams</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
   /* ---------- DESIGN TOKENS ---------- */
   :root {
-    /* Surfaces */
     --bg: #ffffff;
-    --bg-alt: #faf6ef;            /* warm off-white, hint of cream */
+    --bg-alt: #faf6ef;
     --bg-terracotta-soft: #f3ddcd;
     --bg-teal-soft: #e6f0ec;
-    --bg-accent: #1e2535;         /* navy slab for the dark CTA section */
-    --bg-accent-soft: #f3ddcd;    /* soft terracotta wash for check pills */
+    --bg-accent: #1e2535;
+    --bg-accent-soft: #f3ddcd;
 
-    /* Text */
-    --text-primary: #1e2535;      /* navy */
-    --text-secondary: #5a5d6a;    /* warm slate */
-    --text-tertiary: #9a958d;     /* warm muted */
+    --text-primary: #1e2535;
+    --text-secondary: #5a5d6a;
+    --text-tertiary: #9a958d;
     --text-on-accent: #ffffff;
     --text-on-accent-muted: rgba(255,255,255,0.72);
 
-    /* Borders */
-    --border: #ece6dc;            /* warm border */
+    --border: #ece6dc;
     --border-strong: #d4cdc1;
 
-    /* Accents (sampled from Phoenician/Tanit references) */
-    --terracotta: #b0532e;        /* deep terracotta brick, from the mosaic */
+    --terracotta: #b0532e;
     --terracotta-hover: #944426;
     --teal: #2d8a7e;
     --teal-hover: #1f6b62;
     --slate: #5a6478;
 
-    /* Primary accent = terracotta */
     --accent: #b0532e;
     --accent-hover: #944426;
 
@@ -69,12 +64,8 @@
     margin: 0 auto;
     padding: 0 var(--gutter);
   }
-  section {
-    padding: 112px 0;
-  }
-  section.alt {
-    background: var(--bg-alt);
-  }
+  section { padding: 112px 0; }
+  section.alt { background: var(--bg-alt); }
   section.dark {
     background: var(--bg-accent);
     color: var(--text-on-accent);
@@ -87,9 +78,7 @@
     color: var(--teal);
     margin-bottom: 16px;
   }
-  section.dark .eyebrow {
-    color: var(--text-on-accent-muted);
-  }
+  section.dark .eyebrow { color: var(--text-on-accent-muted); }
   .section-title {
     font-size: clamp(32px, 4vw, 44px);
     font-weight: 600;
@@ -105,9 +94,7 @@
     max-width: 680px;
     margin-bottom: 56px;
   }
-  section.dark .section-lede {
-    color: var(--text-on-accent-muted);
-  }
+  section.dark .section-lede { color: var(--text-on-accent-muted); }
 
   /* ---------- HEADER ---------- */
   .header {
@@ -188,10 +175,7 @@
     transition: all 0.2s;
     border: none;
   }
-  .btn-primary {
-    background: var(--accent);
-    color: white;
-  }
+  .btn-primary { background: var(--accent); color: white; }
   .btn-primary:hover {
     background: var(--accent-hover);
     transform: translateY(-1px);
@@ -201,9 +185,7 @@
     color: var(--text-primary);
     border: 1px solid var(--border-strong);
   }
-  .btn-outline:hover {
-    border-color: var(--text-primary);
-  }
+  .btn-outline:hover { border-color: var(--text-primary); }
   section.dark .btn-outline {
     color: white;
     border-color: rgba(255,255,255,0.3);
@@ -270,11 +252,7 @@
     align-items: center;
     justify-content: center;
   }
-  .hero-mark {
-    width: 70%;
-    height: auto;
-    opacity: 0.92;
-  }
+  .hero-mark { width: 70%; height: auto; opacity: 0.92; }
   .hero-visual::before {
     content: '';
     position: absolute;
@@ -298,9 +276,7 @@
   }
 
   /* ---------- PROBLEM ---------- */
-  .problem-content {
-    max-width: 760px;
-  }
+  .problem-content { max-width: 760px; }
   .problem-content p {
     font-size: 19px;
     color: var(--text-secondary);
@@ -319,11 +295,7 @@
     padding-top: 40px;
     border-top: 1px solid var(--border);
   }
-  .problem-stat {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-  }
+  .problem-stat { display: flex; flex-direction: column; gap: 6px; }
   .problem-stat-value {
     font-size: 36px;
     font-weight: 600;
@@ -342,10 +314,7 @@
     gap: 48px;
     margin-top: 24px;
   }
-  .pillar {
-    position: relative;
-    padding-top: 32px;
-  }
+  .pillar { position: relative; padding-top: 32px; }
   .pillar-num {
     position: absolute;
     top: 0;
@@ -361,13 +330,34 @@
     margin-bottom: 12px;
     letter-spacing: -0.01em;
   }
-  .pillar p {
-    color: var(--text-secondary);
-    font-size: 16px;
-    line-height: 1.6;
-  }
+  .pillar p { color: var(--text-secondary); font-size: 16px; line-height: 1.6; }
   @media (max-width: 768px) {
     .pillars { grid-template-columns: 1fr; gap: 32px; }
+  }
+
+  /* ---------- SERVICE BLOCKS ---------- */
+  .service-block {
+    padding-top: 72px;
+    margin-top: 72px;
+    border-top: 1px solid var(--border);
+  }
+  .service-block:first-child {
+    padding-top: 0;
+    margin-top: 0;
+    border-top: none;
+  }
+
+  /* ---------- AUDIT PROSE ---------- */
+  .audit-prose { max-width: 800px; }
+  .audit-prose > p {
+    font-size: 18px;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 20px;
+  }
+  .audit-prose > p.note {
+    font-size: 15px;
+    color: var(--text-tertiary);
   }
 
   /* ---------- OFFER CARDS ---------- */
@@ -394,23 +384,6 @@
     border-color: var(--accent);
     transform: translateY(-2px);
   }
-  .offer-card.featured {
-    border-color: var(--accent);
-    position: relative;
-  }
-  .offer-card.featured::before {
-    content: 'Most depth';
-    position: absolute;
-    top: -10px;
-    left: 24px;
-    background: var(--accent);
-    color: white;
-    padding: 4px 12px;
-    font-size: 12px;
-    font-weight: 500;
-    letter-spacing: 0.05em;
-    border-radius: var(--radius-sm);
-  }
   .offer-title {
     font-size: 22px;
     font-weight: 600;
@@ -421,41 +394,7 @@
     color: var(--text-secondary);
     font-size: 15px;
     margin-bottom: 24px;
-    min-height: 48px;
-  }
-  .offer-price {
-    margin: 8px 0 28px;
-    padding: 20px 0;
-    border-top: 1px solid var(--border);
-    border-bottom: 1px solid var(--border);
-  }
-  .offer-price-launch {
-    font-size: 13px;
-    color: var(--accent);
-    font-weight: 500;
-    letter-spacing: 0.05em;
-    margin-bottom: 4px;
-  }
-  .offer-price-amount {
-    display: flex;
-    align-items: baseline;
-    gap: 10px;
-  }
-  .offer-price-now {
-    font-size: 34px;
-    font-weight: 600;
-    color: var(--text-primary);
-    letter-spacing: -0.02em;
-  }
-  .offer-price-was {
-    font-size: 17px;
-    color: var(--text-tertiary);
-    text-decoration: line-through;
-  }
-  .offer-price-unit {
-    font-size: 14px;
-    color: var(--text-tertiary);
-    margin-top: 4px;
+    flex: 1;
   }
   .offer-features {
     list-style: none;
@@ -482,21 +421,34 @@
     background-position: center;
     background-repeat: no-repeat;
   }
-  .offer-card .btn {
-    width: 100%;
-    justify-content: center;
+  .offer-card .btn { width: 100%; justify-content: center; }
+
+  /* ---------- SPRINT ---------- */
+  .sprint-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: start;
+    margin-top: 16px;
+  }
+  .sprint-body p {
+    font-size: 18px;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 32px;
+  }
+  @media (max-width: 900px) {
+    .sprint-grid { grid-template-columns: 1fr; gap: 40px; }
   }
 
   /* ---------- SURVEY PROOF ---------- */
   .survey-stats {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 32px;
     margin: 24px 0 40px;
   }
-  .stat-block {
-    text-align: left;
-  }
+  .stat-block { text-align: left; }
   .stat-value {
     font-size: clamp(48px, 6vw, 72px);
     font-weight: 600;
@@ -518,9 +470,6 @@
     padding-top: 32px;
     border-top: 1px solid var(--border);
     max-width: 760px;
-  }
-  @media (max-width: 900px) {
-    .survey-stats { grid-template-columns: repeat(2, 1fr); gap: 36px; }
   }
   @media (max-width: 500px) {
     .survey-stats { grid-template-columns: 1fr; gap: 32px; }
@@ -547,10 +496,7 @@
     letter-spacing: 0.1em;
     margin-bottom: 20px;
   }
-  .about-articles {
-    list-style: none;
-    margin-bottom: 32px;
-  }
+  .about-articles { list-style: none; margin-bottom: 32px; }
   .about-articles li {
     padding: 14px 0;
     border-top: 1px solid var(--border);
@@ -616,12 +562,8 @@
 
   /* ---------- FAQ ---------- */
   .faq-list { max-width: 800px; }
-  .faq-item {
-    border-bottom: 1px solid var(--border);
-  }
-  .faq-item:first-child {
-    border-top: 1px solid var(--border);
-  }
+  .faq-item { border-bottom: 1px solid var(--border); }
+  .faq-item:first-child { border-top: 1px solid var(--border); }
   .faq-item summary {
     list-style: none;
     cursor: pointer;
@@ -642,9 +584,7 @@
     color: var(--text-tertiary);
     transition: transform 0.2s;
   }
-  .faq-item[open] summary::after {
-    transform: rotate(45deg);
-  }
+  .faq-item[open] summary::after { transform: rotate(45deg); }
   .faq-item summary:hover { color: var(--accent); }
   .faq-answer {
     padding: 0 0 28px;
@@ -655,10 +595,7 @@
   }
 
   /* ---------- FINAL CTA ---------- */
-  .final-cta {
-    text-align: center;
-    padding: 120px 0;
-  }
+  .final-cta { text-align: center; padding: 120px 0; }
   .final-cta h2 {
     font-size: clamp(36px, 5vw, 56px);
     font-weight: 600;
@@ -683,13 +620,8 @@
     justify-content: center;
     flex-wrap: wrap;
   }
-  .final-cta .btn-primary {
-    background: white;
-    color: var(--accent);
-  }
-  .final-cta .btn-primary:hover {
-    background: rgba(255,255,255,0.92);
-  }
+  .final-cta .btn-primary { background: white; color: var(--accent); }
+  .final-cta .btn-primary:hover { background: rgba(255,255,255,0.92); }
 
   /* ---------- FOOTER ---------- */
   .footer {
@@ -712,11 +644,7 @@
     font-size: 14px;
   }
   .footer-brand svg { width: 22px; height: 28px; }
-  .footer-links {
-    display: flex;
-    gap: 24px;
-    font-size: 14px;
-  }
+  .footer-links { display: flex; gap: 24px; font-size: 14px; }
   .footer-links a {
     color: var(--text-tertiary);
     text-decoration: none;
@@ -730,10 +658,7 @@
     transform: translateY(16px);
     transition: opacity 0.8s ease, transform 0.8s ease;
   }
-  .fade-in.visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  .fade-in.visible { opacity: 1; transform: translateY(0); }
   @media (prefers-reduced-motion: reduce) {
     .fade-in, html { scroll-behavior: auto; transition: none; }
     .fade-in { opacity: 1; transform: none; }
@@ -754,8 +679,7 @@
       <span class="brand-name">Tanit<span class="tech">Tech</span></span>
     </a>
     <nav class="nav">
-      <a href="#professionals" class="desktop-only">For professionals</a>
-      <a href="#companies" class="desktop-only">For companies</a>
+      <a href="#services" class="desktop-only">Services</a>
       <a href="#about" class="desktop-only">About</a>
       <a href="mailto:saif.shabou@gmail.com" class="nav-cta">Get in touch</a>
     </nav>
@@ -767,11 +691,11 @@
   <div class="container">
     <div class="hero-grid">
       <div class="fade-in">
-        <h1>AI training built around <em class="accent-word">your actual work.</em></h1>
-        <p class="hero-lede">Practical workshops for professionals and teams. No generic tutorials. No theory dumps. You leave with working AI integrated into the tasks you do every day.</p>
+        <h1>AI training, audits, and advisory, built around <em class="accent-word">your actual work.</em></h1>
+        <p class="hero-lede">Practical AI for professionals, teams, and organisations. We train people to use AI on the tasks that fill their week. We audit where AI actually helps. We advise leaders on the plan. No generic tutorials. No slide decks that sit unread.</p>
         <div class="hero-ctas">
-          <a href="#professionals" class="btn btn-primary btn-arrow">For professionals</a>
-          <a href="#companies" class="btn btn-outline btn-arrow">For companies</a>
+          <a href="#services" class="btn btn-primary btn-arrow">Our services</a>
+          <a href="mailto:saif.shabou@gmail.com?subject=Tanit%20Tech%20-%20Audit" class="btn btn-outline btn-arrow">Request an audit</a>
         </div>
         <div class="hero-meta">
           <span class="dot"></span>
@@ -789,7 +713,7 @@
   </div>
 </section>
 
-<!-- ============ PROBLEM ============ -->
+<!-- ============ THE GAP ============ -->
 <section class="alt" id="problem">
   <div class="container">
     <div class="fade-in">
@@ -800,6 +724,7 @@
       <p>Most professionals already use AI. They use it for emails, quick searches, the occasional summary. Almost nobody has it integrated into the work that actually fills their week.</p>
       <p>The market is saturated at the "I use ChatGPT" level. The next move, integrating AI into specific tasks, automating real workflows, building agents that do recurring work, that move has not happened yet for most people.</p>
       <p>Generic AI courses do not close this gap. <strong>Vertical, hands-on training does.</strong></p>
+      <p>The same question scales. For one professional it is which tasks to hand to AI. For an organisation it is which workflows to automate, which to augment, and which to leave with people. Answering that well needs a method, not a guess. That is what the audit provides.</p>
       <div class="problem-stats">
         <div class="problem-stat">
           <div class="problem-stat-value">86%</div>
@@ -814,7 +739,7 @@
   </div>
 </section>
 
-<!-- ============ APPROACH ============ -->
+<!-- ============ HOW WE WORK ============ -->
 <section id="approach">
   <div class="container">
     <div class="fade-in">
@@ -841,113 +766,127 @@
   </div>
 </section>
 
-<!-- ============ FOR PROFESSIONALS (B2C) ============ -->
-<section id="professionals">
+<!-- ============ SERVICES ============ -->
+<section class="alt" id="services">
   <div class="container">
-    <div class="fade-in">
-      <div class="eyebrow">For professionals</div>
-      <h2 class="section-title">1:1 training for individuals.</h2>
-      <p class="section-lede">For professionals investing in themselves. Online, scheduled around your calendar. Pick the format that matches your time and your appetite for depth.</p>
-    </div>
-    <div class="offers two">
-      <div class="offer-card fade-in">
-        <h3 class="offer-title">The 3-Hour Intensive</h3>
-        <p class="offer-tagline">One focused session. You bring two or three real tasks. We rebuild them with AI together.</p>
-        <div class="offer-price">
-          <div class="offer-price-launch">Launch price · limited cohort</div>
-          <div class="offer-price-amount">
-            <span class="offer-price-now">€395</span>
-            <span class="offer-price-was">€450</span>
-          </div>
-          <div class="offer-price-unit">One 3-hour 1:1 session, online</div>
-        </div>
-        <ul class="offer-features">
-          <li>30-minute pre-session scoping call</li>
-          <li>3 hours of 1:1 live work on your real tasks</li>
-          <li>Working AI workflows you can use Monday morning</li>
-          <li>Recap document with prompts and links</li>
-          <li>One week of follow-up email support</li>
-        </ul>
-        <a href="mailto:saif.shabou@gmail.com?subject=Tanit%20Tech%20-%203-Hour%20Intensive" class="btn btn-primary btn-arrow">Book a session</a>
+
+    <!-- TRAIN -->
+    <div class="service-block">
+      <div class="fade-in">
+        <div class="eyebrow">Train</div>
+        <h2 class="section-title">Capability building for individuals and teams.</h2>
+        <p class="section-lede">Every session is built around the tasks you already do, not a generic curriculum. You build during the session and leave with working tools.</p>
       </div>
-      <div class="offer-card featured fade-in">
-        <h3 class="offer-title">The 6-Week Coaching Block</h3>
-        <p class="offer-tagline">For people who want sustained adoption, not a one-shot. One integrated workflow per session.</p>
-        <div class="offer-price">
-          <div class="offer-price-launch">Launch price · limited cohort</div>
-          <div class="offer-price-amount">
-            <span class="offer-price-now">€990</span>
-            <span class="offer-price-was">€1,200</span>
-          </div>
-          <div class="offer-price-unit">Four 1-hour sessions over six weeks</div>
+      <div class="offers two">
+        <div class="offer-card fade-in">
+          <h3 class="offer-title">The 3-Hour Intensive</h3>
+          <p class="offer-tagline">One focused session. You bring two or three real tasks. We rebuild them with AI together.</p>
+          <ul class="offer-features">
+            <li>30-minute pre-session scoping call</li>
+            <li>3 hours of 1:1 live work on your real tasks</li>
+            <li>Working AI workflows you can use Monday morning</li>
+            <li>Recap document with prompts and links</li>
+            <li>One week of follow-up email support</li>
+          </ul>
+          <a href="mailto:saif.shabou@gmail.com?subject=Tanit%20Tech%20-%203-Hour%20Intensive" class="btn btn-outline btn-arrow">Request a quote</a>
         </div>
-        <ul class="offer-features">
-          <li>30-minute scoping call to map your workflows</li>
-          <li>Four 1-hour 1:1 sessions, online, bi-weekly</li>
-          <li>One real workflow integrated per session</li>
-          <li>Async email and Loom support between sessions</li>
-          <li>Final review document with all your workflows</li>
-        </ul>
-        <a href="mailto:saif.shabou@gmail.com?subject=Tanit%20Tech%20-%206-Week%20Coaching" class="btn btn-primary btn-arrow">Book a session</a>
+        <div class="offer-card fade-in">
+          <h3 class="offer-title">The 6-Week Coaching Block</h3>
+          <p class="offer-tagline">For people who want sustained adoption, not a one-shot. One integrated workflow per session.</p>
+          <ul class="offer-features">
+            <li>30-minute scoping call to map your workflows</li>
+            <li>Four 1-hour 1:1 sessions, online, bi-weekly</li>
+            <li>One real workflow integrated per session</li>
+            <li>Async email and Loom support between sessions</li>
+            <li>Final review document with all your workflows</li>
+          </ul>
+          <a href="mailto:saif.shabou@gmail.com?subject=Tanit%20Tech%20-%206-Week%20Coaching" class="btn btn-outline btn-arrow">Request a quote</a>
+        </div>
+        <div class="offer-card fade-in">
+          <h3 class="offer-title">Half-Day Team Workshop</h3>
+          <p class="offer-tagline">A focused half-day session. Up to 12 people. We scope your team's real workflows before we arrive.</p>
+          <ul class="offer-features">
+            <li>Pre-workshop scoping call with team lead</li>
+            <li>4 hours on-site or remote</li>
+            <li>Tailored to your team's actual functions</li>
+            <li>Working AI tools each attendee leaves with</li>
+            <li>Post-workshop recap and prompts library</li>
+          </ul>
+          <a href="mailto:saif.shabou@gmail.com?subject=Tanit%20Tech%20-%20Half-Day%20Workshop" class="btn btn-outline btn-arrow">Request a quote</a>
+        </div>
+        <div class="offer-card fade-in">
+          <h3 class="offer-title">Full-Day Team Workshop</h3>
+          <p class="offer-tagline">A full day. More depth, more workflows per attendee. Two cycles of build and debrief.</p>
+          <ul class="offer-features">
+            <li>Pre-workshop scoping call with team lead</li>
+            <li>7 hours on-site or remote</li>
+            <li>Two build cycles with structured debrief</li>
+            <li>Multiple working tools per attendee</li>
+            <li>Recap, prompts library, and 30-day follow-up</li>
+          </ul>
+          <a href="mailto:saif.shabou@gmail.com?subject=Tanit%20Tech%20-%20Full-Day%20Workshop" class="btn btn-outline btn-arrow">Request a quote</a>
+        </div>
       </div>
     </div>
+
+    <!-- AUDIT -->
+    <div class="service-block">
+      <div class="fade-in">
+        <div class="eyebrow">Audit</div>
+        <h2 class="section-title">A diagnosis before a plan.</h2>
+      </div>
+      <div class="audit-prose fade-in">
+        <p>Most AI assessments score your tools and your awareness. Ours measures the two things that decide whether AI helps or hurts: how exposed your work is to AI, and how prepared your organisation is to absorb it. It is the same framework used to score 124 economies, applied to a single team or function. The output is not a maturity badge. It is a written diagnosis and a prioritised plan.</p>
+        <ul class="offer-features">
+          <li>A workflow-by-workflow read of the audited function</li>
+          <li>Each workflow sorted into Automate, Augment, or Retain</li>
+          <li>Opportunities ranked by impact, feasibility, and time to value</li>
+          <li>A short, ordered next-steps plan you can act on or hand to whoever ships it</li>
+        </ul>
+        <p>A structured engagement, usually about a week. Interviews with the people who do the work, a written audit, and an executive readout.</p>
+        <p class="note">No generic checklist. No tool inventory dressed up as a strategy. A method with published foundations, applied to your actual workflows.</p>
+        <a href="mailto:saif.shabou@gmail.com?subject=Tanit%20Tech%20-%20Audit" class="btn btn-primary btn-arrow" style="margin-top: 32px;">Request an audit</a>
+      </div>
+    </div>
+
+    <!-- ADVISE -->
+    <div class="service-block">
+      <div class="fade-in">
+        <div class="eyebrow">Advise</div>
+        <h2 class="section-title">Planning and sustained guidance.</h2>
+        <p class="section-lede">Once the audit names the opportunities, the advisory work turns them into a plan and keeps it on track.</p>
+      </div>
+      <div class="offers two">
+        <div class="offer-card fade-in">
+          <h3 class="offer-title">Integration Roadmap</h3>
+          <p class="offer-tagline">A board-ready integration plan built around your real workflows. Prioritised, sequenced, and tied to the people and tools who will deliver it.</p>
+          <a href="mailto:saif.shabou@gmail.com?subject=Tanit%20Tech%20-%20Integration%20Roadmap" class="btn btn-outline btn-arrow">Talk to us</a>
+        </div>
+        <div class="offer-card fade-in">
+          <h3 class="offer-title">Fractional AI Advisor</h3>
+          <p class="offer-tagline">A senior practitioner on call for leaders who want judgement without a full-time hire. Strategic sessions, vendor and tool guidance, and ongoing review.</p>
+          <a href="mailto:saif.shabou@gmail.com?subject=Tanit%20Tech%20-%20Fractional%20Advisor" class="btn btn-outline btn-arrow">Talk to us</a>
+        </div>
+      </div>
+      <p style="margin-top: 32px; font-size: 15px; color: var(--text-tertiary); max-width: 560px;">The person who scopes the work is the person who delivers it. No junior team. No slide deck in place of a plan.</p>
+    </div>
+
   </div>
 </section>
 
-<!-- ============ FOR COMPANIES (B2B) ============ -->
-<section class="alt" id="companies">
+<!-- ============ AI INTEGRATION SPRINT ============ -->
+<section id="sprint">
   <div class="container">
     <div class="fade-in">
-      <div class="eyebrow">For companies</div>
-      <h2 class="section-title">Workshops and programs for teams.</h2>
-      <p class="section-lede">For organisations ready to move past pilot mode. Every engagement is scoped to your team's actual functions. Available remote, on-site in the Netherlands, or across the EU.</p>
+      <div class="eyebrow">End-to-end program</div>
+      <h2 class="section-title">The AI Integration Sprint.</h2>
     </div>
-    <div class="offers three">
-      <div class="offer-card fade-in">
-        <h3 class="offer-title">Half-Day Team Workshop</h3>
-        <p class="offer-tagline">A focused half-day session. Up to 12 people. We scope your team's real workflows before we arrive.</p>
-        <div class="offer-price">
-          <div class="offer-price-amount">
-            <span class="offer-price-now">€3,500</span>
-          </div>
-          <div class="offer-price-unit">Flat fee · or €450 per seat</div>
-        </div>
-        <ul class="offer-features">
-          <li>Pre-workshop scoping call with team lead</li>
-          <li>4 hours on-site or remote</li>
-          <li>Tailored to your team's actual functions</li>
-          <li>Working AI tools each attendee leaves with</li>
-          <li>Post-workshop recap and prompts library</li>
-        </ul>
-        <a href="mailto:saif.shabou@gmail.com?subject=Tanit%20Tech%20-%20Half-Day%20Workshop" class="btn btn-outline btn-arrow">Talk to us</a>
+    <div class="sprint-grid">
+      <div class="sprint-body fade-in">
+        <p>When an organisation wants the whole path in one engagement, the Integration Sprint runs the audit, the training, and the advisory together over four weeks, ending in a measured adoption plan.</p>
+        <a href="mailto:saif.shabou@gmail.com?subject=Tanit%20Tech%20-%20AI%20Integration%20Sprint" class="btn btn-primary btn-arrow">Talk to us</a>
       </div>
-      <div class="offer-card fade-in">
-        <h3 class="offer-title">Full-Day Team Workshop</h3>
-        <p class="offer-tagline">A full day. More depth, more workflows per attendee. Two cycles of build and debrief.</p>
-        <div class="offer-price">
-          <div class="offer-price-amount">
-            <span class="offer-price-now">€5,500</span>
-          </div>
-          <div class="offer-price-unit">Flat fee · or €700 per seat</div>
-        </div>
-        <ul class="offer-features">
-          <li>Pre-workshop scoping call with team lead</li>
-          <li>7 hours on-site or remote</li>
-          <li>Two build cycles with structured debrief</li>
-          <li>Multiple working tools per attendee</li>
-          <li>Recap, prompts library, and 30-day follow-up</li>
-        </ul>
-        <a href="mailto:saif.shabou@gmail.com?subject=Tanit%20Tech%20-%20Full-Day%20Workshop" class="btn btn-outline btn-arrow">Talk to us</a>
-      </div>
-      <div class="offer-card featured fade-in">
-        <h3 class="offer-title">AI Integration Sprint</h3>
-        <p class="offer-tagline">A 4-week program for teams committing to embed AI into a specific function.</p>
-        <div class="offer-price">
-          <div class="offer-price-amount">
-            <span class="offer-price-now">From €12,000</span>
-          </div>
-          <div class="offer-price-unit">Scoped per engagement</div>
-        </div>
+      <div class="fade-in">
         <ul class="offer-features">
           <li>Week 1: workflow audit and opportunity map</li>
           <li>Week 2: full-day team workshop</li>
@@ -955,7 +894,29 @@
           <li>Week 4: build review and adoption plan</li>
           <li>Final report with measured outcomes</li>
         </ul>
-        <a href="mailto:saif.shabou@gmail.com?subject=Tanit%20Tech%20-%20AI%20Integration%20Sprint" class="btn btn-primary btn-arrow">Talk to us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ METHOD ============ -->
+<section class="alt" id="method">
+  <div class="container">
+    <div class="fade-in">
+      <div class="eyebrow">The framework</div>
+      <h2 class="section-title">The method behind the audit.</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-body fade-in">
+        <p>The audit applies the AI Transition Capacity Framework. The framework combines two measures of any workforce: how exposed its work is to AI, and how prepared it is to absorb the technology. Read together, they say more than any single exposure score can. The framework draws on the IMF AI Preparedness Index, the occupational exposure work of Felten, Raj, and Seamans, and the Anthropic Economic Index.</p>
+        <p>At the scale of a country it is a map for policy. It has been applied across 124 economies. At the scale of one organisation it becomes an audit, and the audit becomes a plan.</p>
+      </div>
+      <div class="about-side fade-in">
+        <h4>Read the framework</h4>
+        <ul class="about-articles">
+          <li><a href="https://s-ai-f.github.io/TaniT/articles/beyond-the-automation-panic/index.html">Beyond the Automation Panic</a></li>
+          <li><a href="https://s-ai-f.github.io/TaniT/articles/is-your-company-ai-ready/index.html">Is Your Company AI Ready?</a></li>
+        </ul>
       </div>
     </div>
   </div>
@@ -970,14 +931,6 @@
       <p class="section-lede">Before we designed this offer, we asked the people we wanted to serve. Their answers shaped every workshop.</p>
     </div>
     <div class="survey-stats fade-in">
-      <div class="stat-block">
-        <div class="stat-value">86%</div>
-        <div class="stat-label">said integrating AI into their workflow is their biggest training need</div>
-      </div>
-      <div class="stat-block">
-        <div class="stat-value">64%</div>
-        <div class="stat-label">understand AI agents but have never used or built one</div>
-      </div>
       <div class="stat-block">
         <div class="stat-value">71%</div>
         <div class="stat-label">want help picking the right tool and making outputs reliable</div>
@@ -1001,7 +954,7 @@
     <div class="about-grid">
       <div class="about-body fade-in">
         <p>Tanit Tech is run by Saif Shabou, founder of TaniT.</p>
-        <p>Saif holds a PhD in machine learning, started in 2013, and has spent more than a decade working at the intersection of data science, software engineering, and product management. He has built AI systems, led data teams, and shipped products inside large organisations.</p>
+        <p>Saif holds a PhD in machine learning, started in 2013, and has spent more than a decade working at the intersection of data science, software engineering, and product management. He has built AI systems, led data teams, and shipped products inside large organisations. He also advises organisations on AI integration strategy.</p>
         <p>He writes about AI, knowledge, and how machines change the way humans work at TaniT, the publication that gave Tanit Tech its name.</p>
         <a href="https://www.linkedin.com/in/saifshabou/" class="btn btn-outline btn-arrow" style="margin-top: 16px;">Connect on LinkedIn</a>
       </div>
@@ -1043,6 +996,18 @@
     </div>
     <div class="faq-list fade-in">
       <details class="faq-item">
+        <summary>How is the audit different from a generic AI readiness assessment?</summary>
+        <div class="faq-answer">It uses the AI Transition Capacity Framework, which measures two things: how exposed your workflows are to AI, and how prepared your organisation is to absorb it. The output is not a maturity score. It is a prioritised list of workflows sorted into Automate, Augment, or Retain, with a short next-steps plan you can act on.</div>
+      </details>
+      <details class="faq-item">
+        <summary>We need a plan, not a workshop. Where do we start?</summary>
+        <div class="faq-answer">Start with the audit. It produces the plan. Training and advisory follow from what the audit finds. If you already know where the opportunities are, we can go directly to the Integration Roadmap.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Do you still do training?</summary>
+        <div class="faq-answer">Yes, training is one of the three services. Many engagements begin with an audit and lead into training where the gap is capability, not just strategy.</div>
+      </details>
+      <details class="faq-item">
         <summary>What if I am a complete beginner with AI tools?</summary>
         <div class="faq-answer">That is fine. We start by mapping your work, not your tool history. The 3-Hour Intensive and the half-day workshop both work for beginners. We use the scoping call to calibrate the depth.</div>
       </details>
@@ -1075,7 +1040,7 @@
   <div class="container">
     <div class="fade-in">
       <h2>Ready to make AI useful in your actual work?</h2>
-      <p>Pick the format that fits you. Or just write and tell us what you are trying to solve.</p>
+      <p>Whether you want your team trained, a function audited, or a plan you can act on, write and tell us what you are trying to solve.</p>
       <div class="final-cta-buttons">
         <a href="mailto:saif.shabou@gmail.com?subject=Tanit%20Tech%20enquiry" class="btn btn-primary btn-arrow">Email saif.shabou@gmail.com</a>
         <a href="https://www.linkedin.com/in/saifshabou/" class="btn btn-outline btn-arrow">Connect on LinkedIn</a>
